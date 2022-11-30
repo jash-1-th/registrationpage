@@ -1,58 +1,77 @@
-<div class="form_wrapper">
-    <div class="form_container">
-        <div class="title_container">
-            <h2>Responsive Registration Form</h2>
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>Registration Form | BU code</title>
+    <link rel="stylesheet" href="register.css">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Registration Page - BU Code</div>
+    <div class="content">
+      <form action="#">
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Full Name</span>
+            <input type="text" placeholder="Enter your name" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Enrollment Number</span>
+            <input type="text" placeholder="Enter your enroll id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Email</span>
+            <input type="text" placeholder="Enter your  university mail id" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Course</span>
+            <input type="text" placeholder="course opted" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Batch</span>
+            <input type="text" placeholder="Enter your batch details" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Year</span>
+            <input type="text" placeholder="Current year of study" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Password</span>
+            <input type="password" placeholder="Enter your password" required>
+          </div>
+          <div class="input-box">
+            <span class="details">Confirm Password</span>
+            <input type="text" placeholder="Confirm your password" required>
+          </div>
+        
         </div>
-        <div class="row clearfix">
-            <div class="">
-                <form>
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-envelope"></i></span>
-                        <input type="email" name="email" placeholder="Email" required />
-                    </div>
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="password" name="password" placeholder="Password" required />
-                    </div>
-                    <div class="input_field"> <span><i aria-hidden="true" class="fa fa-lock"></i></span>
-                        <input type="password" name="password" placeholder="Re-type Password" required />
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col_half">
-                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                <input type="text" name="name" placeholder="First Name" />
-                            </div>
-                        </div>
-                        <div class="col_half">
-                            <div class="input_field"> <span><i aria-hidden="true" class="fa fa-user"></i></span>
-                                <input type="text" name="name" placeholder="Last Name" required />
-                            </div>
-                        </div>
-                    </div>
-                    <div class="input_field radio_option">
-                        <input type="radio" name="radiogroup1" id="rd1">
-                        <label for="rd1">Male</label>
-                        <input type="radio" name="radiogroup1" id="rd2">
-                        <label for="rd2">Female</label>
-                    </div>
-                    <div class="input_field select_option">
-                        <select>
-                            <option>Select a country</option>
-                            <option>Option 1</option>
-                            <option>Option 2</option>
-                        </select>
-                        <div class="select_arrow"></div>
-                    </div>
-                    <div class="input_field checkbox_option">
-                        <input type="checkbox" id="cb1">
-                        <label for="cb1">I agree with terms and conditions</label>
-                    </div>
-                    <div class="input_field checkbox_option">
-                        <input type="checkbox" id="cb2">
-                        <label for="cb2">I want to receive the newsletter</label>
-                    </div>
-                    <input class="button" type="submit" value="Register" />
-                </form>
-            </div>
+        <div class="gender-details">
+          <input type="radio" name="gender" id="dot-1">
+          <input type="radio" name="gender" id="dot-2">
+          <input type="radio" name="gender" id="dot-3">
+          <span class="gender-title">Gender</span>
+          <div class="category">
+            <label for="dot-1">
+            <span class="dot one"></span>
+            <span class="gender">Male</span>
+          </label>
+          <label for="dot-2">
+            <span class="dot two"></span>
+            <span class="gender">Female</span>
+          </label>
+          <label for="dot-3">
+            <span class="dot three"></span>
+            <span class="gender">Prefer not to say</span>
+            </label>
+          </div>
         </div>
+        <div class="button">
+          <input type="submit" value="Register">
+        </div>
+      </form>
     </div>
-</div>
-<p class="credit">Developed by <a href="http://www.designtheway.com" target="_blank">Design the way</a></p>
+  </div>
+
+</body>
+</html>
